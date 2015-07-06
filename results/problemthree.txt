@@ -1,0 +1,11 @@
+
+Top 10 most informative words in 1930: ('the', 'a', 'and', 'to', 'of', 'is', 'in', 'his', 'he', 'her')
+Top 10 most informative words in 1940: ('the', 'a', 'and', 'to', 'of', 'is', 'in', 'his', 'he', 'with')
+Top 10 most informative words in 1950: ('the', 'to', 'a', 'and', 'of', 'is', 'in', 'his', 'he', 'for')
+Top 10 most informative words in 1960: ('the', 'to', 'a', 'and', 'of', 'is', 'in', 'his', 'he', 'for')
+Top 10 most informative words in 1970: ('the', 'to', 'a', 'and', 'of', 'is', 'in', 'his', 'he', 'her')
+Top 10 most informative words in 1980: ('the', 'to', 'and', 'a', 'of', 'is', 'in', 'his', 'he', 'her')
+Top 10 most informative words in 1990: ('the', 'to', 'a', 'and', 'of', 'is', 'in', 'his', 'he', 'her')
+Top 10 most informative words in 2000: ('the', 'a', 'and', 'to', 'of', 'in', 'is', 'his', 'with', 'her')
+Top 10 most informative words in 2010: ('the', 'a', 'and', 'to', 'of', 'in', 'is', 'his', 'with', 'for')
+Accuracy of Naive Bayes Classifier with top 100 most informativewords from each decade removed: 0.213925925926%

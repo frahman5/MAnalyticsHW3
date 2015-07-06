@@ -1,0 +1,51 @@
+\documentclass[12pt,twoside]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[vmargin = 1in,hmargin=1in]{geometry}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\begin{document}
+\begin{flushleft}
+1a)
+\begin{IEEEeqnarray*}{rCl}
+P(Y|X) & = & \frac{P(YX)}{P(X)}  ;\text{definition of conditional probability}
+\\
+& = & \frac{P(X|Y)P(Y)}{P(X)}     ;\text{chain rule}
+\end{IEEEeqnarray*}
+
+1c)
+\begin{IEEEeqnarray*}{rCl}
+P(Y|x_1, x_2, ... , x_{|w|}) & = & \frac{P(Y, x_1, x_2, ... , x_{|w|})}{P(x_1, x_2, ... , x_{|w|})}  ;\text{definition of multivariate conditional probability}
+\\
+& = & \frac{P(x_1, x_2, ... , x_{|w|}|Y)P(Y)}{P(x_1, x_2, ... , x_{|w|})}     ;\text{chain rule}
+\end{IEEEeqnarray*}
+
+1d)
+\begin{IEEEeqnarray*}{rCl}
+P(Y) & = &\frac{ |\{m|m \text{ is a movie on IMDB that was released in year } Y\}|}{|\{m|m \text{ is a movie on IMDB}\}|}
+\\
+P(Y|x_i) & = &\frac{ |\{r|r \text{ is a review where word $i$ appears $x_i$ times and $r$'s movie was released in year $Y$ }\}|}{|\{r|r \text{ is an IMDB review where word $i$ appears $x_i$ times}\}|}
+\\
+P(x_i|Y) & = &\frac{ |\{r|r \text{ is a review where word $i$ appears $x_i$ times and $r$'s movie was released in year $Y$ }\}|}{P(Y)}
+\end{IEEEeqnarray*}
+
+1e)
+\begin{IEEEeqnarray*}{rCl}
+P(Y|x_1, x_2, ... , x_{|w|}) & = & \frac{P(x_1, x_2, ... , x_{|w|}|Y)P(Y)}{P(x_1, x_2, ... , x_{|w|})}     ;\text{Bayes Rule}
+\\
+& = & \frac{P(x_1|Y)(P(x_2, ... , x_{|w|}|Y, x_1)P(Y)}{P(x_1, x_2, ... , x_{|w|})}   ; \text{chain rule}
+\\
+& ... &
+\\
+& = & \frac{P(Y)}{P(x_1, x_2, ... , x_{|w|})}\prod_{i=1}^{|w|}P(x_1, x_2, ... , x_i|Y, x_1, x_2, ... , x_{i-1})
+\end{IEEEeqnarray*}
+
+1i)
+\begin{IEEEeqnarray*}{rCl}
+P(Y|x_1, x_2, ... , x_{|w|}) & = & \frac{P(Y)}{P(x_1, x_2, ... , x_{|w|})}\prod_{i=1}^{|w|}P(x_1, x_2, ... , x_i|Y, x_1, x_2, ... , x_{i-1})
+\\
+& = & \frac{P(Y)}{P(x_1, x_2, ... , x_{|w|})}\prod_{i=1}^{|w|}P(x_i|Y)
+\end{IEEEeqnarray*}
+\end{flushleft}
+\end{document}
